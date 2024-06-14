@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="stopwatch.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <div id="time">
+            <div class="circle" style="--clr:#cb3131;">
+                <div class="dots hr_dot"></div>
+                <svg>
+                    <circle cx="34" cy="34" r="34"></circle>
+                    <circle cx="34" cy="34" r="34" id="hh"></circle>
+                </svg>
+                <div id="hours">00</div>
+            </div>
+            <div class="circle" style="--clr:#d6d2e5;">
+                <div class="dots min_dot"></div>
+                <svg>
+                    <circle cx="34" cy="34" r="34"></circle>
+                    <circle cx="34" cy="34" r="34" id="mm"></circle>
+                </svg>
+                <div id="minutes">00</div>
+            </div>
+            <div class="circle" style="--clr:#35d257;">
+                <div class="dots sec_dot"></div>
+                <svg>
+                    <circle cx="34" cy="34" r="34"></circle>
+                    <circle cx="34" cy="34" r="34" id="ss"></circle>
+                </svg>
+                <div id="seconds">00</div>
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="gradient-button reset-btn">Reset</button>
+            <button class="gradient-button start-pause-btn">Start</button>
+            <button class="gradient-button lap-btn">Lap</button>
+        </div>
+        <div class="laps-container">
+            <div class="no-laps"><h2>No Laps</h2></div>
+            <div class="laps"></div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

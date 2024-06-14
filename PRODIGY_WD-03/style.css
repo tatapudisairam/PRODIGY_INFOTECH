@@ -1,0 +1,174 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+} 
+
+.section {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Game Mode Selection and Player Icon Selection */
+#game-mode-selection p {
+    margin-bottom: 20px;
+}
+
+#game-mode-selection button,
+#player-icon-selection button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    background: linear-gradient(to right, #ff6e7f, #6a90a5);
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#game-mode-selection button:hover,
+#player-icon-selection button:hover {
+    background: linear-gradient(to right, #ff5858, #f09819);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Game Container */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.cell {
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Turn Indicator */
+.turn-indicator {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.turn-indicator span {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.turn-indicator span.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Controls */
+.controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    margin-top: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    background: linear-gradient(to right, #ff6e7f, #bfe9ff);
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.controls button:hover {
+    background: linear-gradient(to right, #ff5858, #f09819);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Status */
+.status {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 25px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    animation: statusAnimation 0.5s ease-in-out;
+}
+
+@keyframes statusAnimation {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Replay and Home Buttons */
+.replay-btn {
+    background: linear-gradient(to right, #27ae60, #2ecc71);
+}
+
+.home-btn {
+    background: linear-gradient(to right, #c0392b, #e74c3c);
+}
+
+@media only screen and (max-width: 450px) {
+    .game-board {
+        grid-template-columns: repeat(3, 70px);
+        grid-template-rows: repeat(3, 70px);
+        gap: 8px;
+    }
+    
+    .cell {
+        font-size: 35px;
+    }
+    #game-mode-selection h1{
+        font-size: 1.7em;
+    }
+    #game-mode-selection button{
+        padding: 9px 14px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+  }
