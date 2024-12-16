@@ -15,7 +15,7 @@ This project is a **Stopwatch** application, built to track time with start, sto
 ---
 
 ### 3. [PRODIGY_WD_3: Tic Tac Toe Game](https://s-tictactoe-16.netlify.app/)
-This project is a **Tic Tac Toe** game where users can play the classic game against each other. It includes a simple interface and win condition checks.
+This project is a **Tic Tac Toe** game where users can play the classic game against each other. It includes a simple interface and win condition checks. [Live](https://s-tictactoe-16.netlify.app/)
 
 ---
 
